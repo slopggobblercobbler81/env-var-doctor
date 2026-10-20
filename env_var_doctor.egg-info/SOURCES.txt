@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+env_var_doctor/__init__.py
+env_var_doctor/__main__.py
+env_var_doctor/cli.py
+env_var_doctor/env_var_doctor.py
+env_var_doctor.egg-info/PKG-INFO
+env_var_doctor.egg-info/SOURCES.txt
+env_var_doctor.egg-info/dependency_links.txt
+env_var_doctor.egg-info/entry_points.txt
+env_var_doctor.egg-info/top_level.txt
+tests/test_doctor.py

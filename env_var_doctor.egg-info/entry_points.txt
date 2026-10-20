@@ -1,0 +1,2 @@
+[console_scripts]
+env-var-doctor = env_var_doctor.cli:main

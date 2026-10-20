@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "env-var-doctor"
+version = "0.1.0"
+description = "Validate and analyze .env files against .env.example"
+readme = "README.md"
+authors = [{ name = "Developer", email = "developer@example.com" }]
+license = "MIT"
+requires-python = ">=3.8"
+
+[project.scripts]
+env-var-doctor = "env_var_doctor.cli:main"
+
+[tool.setuptools]
+packages = ["env_var_doctor"]
