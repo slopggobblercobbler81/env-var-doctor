@@ -15,6 +15,8 @@ class EnvDoctor:
                     stripped = line.strip()
                     if not stripped or stripped.startswith("#"):
                         continue
+                    if re.match(r"^export\s+", stripped):
+                        stripped = re.sub(r"^export\s+", "", stripped)
                     if "=" not in stripped:
                         errors.append(f"{filepath}:{line_no}: Invalid syntax (missing '='): {stripped}")
                         continue
