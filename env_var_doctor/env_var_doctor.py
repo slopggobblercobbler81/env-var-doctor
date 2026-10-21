@@ -22,6 +22,8 @@ class EnvDoctor:
                     parts = stripped.split("=", 1)
                     key = parts[0].strip()
                     val = parts[1].strip()
+                    if "#" in val and not (val.startswith('"') and val.endswith('"')) and not (val.startswith("'") and val.endswith("'")):
+                        val = val.split("#", 1)[0].strip()
                     
                     if not re.match(r"^[A-Za-z_][A-Za-z0-9_]*$", key):
                         errors.append(f"{filepath}:{line_no}: Invalid variable name: {key}")
