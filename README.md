@@ -23,3 +23,6 @@ env-var-doctor --check --env .env --example .env.example
 - `--example`: Path to the `.env.example` file (default: `.env.example`)
 - `--strict`: Treat extra environment variables as errors
 - `--check`: Exit with a non-zero status code if any errors or missing variables are found
+
+
+Documentation update for release.
